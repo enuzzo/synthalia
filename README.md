@@ -71,15 +71,17 @@ Roadmap target: **10 effects** total.
 
 ---
 
-## Repo Hygiene
+## Security Notes
 
-- Secrets stay in local `secrets.yaml` (ignored by git)
-- Never commit keys/passwords/tokens
-- Keep OTA + logs reproducible
-- Keep commits in English
+- `secrets.yaml` is local and git-ignored on purpose.
+- If a secret ever lands in git: rotate it, then clean history if needed.
+- OTA and logs should stay reproducible (`python3 -m esphome ...` commands above).
 
 ---
 
 ## License
 
-MIT. Copy it, fork it, remix it, ship it.
+MIT.  
+Use it, copy it, modify it, sell it, fork it into oblivion.
+Just keep the copyright/license notice.
+No warranty, no liability.
