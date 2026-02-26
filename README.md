@@ -63,7 +63,7 @@ It is **taste-driven, parameter-disciplined chaos** -- every constant hand-tuned
 | **Encoder** | KY-040 rotary + push button | The tactile interface. Brass knob. Satisfying clicks. |
 | **Enclosure** | Concrete base, frosted glass dome | The reason people ask "wait, you *made* that?" |
 
-The physical design: a helical LED coil inside a glass bell jar, sitting on a sculpted concrete base with brass rotary knobs and a ToF sensor angled at 45 degrees for natural hand interaction. It looks like something from a design museum. It runs ESPHome.
+The physical design: a helical LED coil inside a glass bell jar, sitting on a sculpted concrete base with brass rotary knobs and a ToF sensor angled at 45 degrees for natural hand interaction. It looks like something from a design museum, or Wes Anderson toilet, you decide. It runs ESPHome.
 
 ---
 
@@ -76,7 +76,7 @@ Synthalia has three operating modes, cycled by clicking the encoder button:
               ┌──── DIM MODE ◄──── COLOR MODE ────┐
               │     (default)       (hue select)   │
               │                                    │
-              │         ▲ single click              │
+              │         ▲ single click             │
               │         │ (exit effects)           │
               │         │                          │
               │    EFFECTS MODE ◄──────────────────┘
