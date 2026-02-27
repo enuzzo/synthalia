@@ -65,7 +65,7 @@ Rule: this file is append-only. Never add secrets (use placeholders like `<WIFI_
 - Goal: publish repository online and apply baseline GitHub hardening.
 - Initial context: local repo ready, user authenticated with GitHub CLI.
 - Changes made:
-  - Remote/public publish: `https://github.com/enuzzo/Synthalia`
+  - Remote/public publish: `https://github.com/enuzzo/synthalia` (originally `Synthalia`, renamed to lowercase for URL uniformity)
   - GitHub settings: description, topics, issues enabled, secret scanning + push protection
   - Branch protection on `main`:
     - PR review required (1 approval)
@@ -87,6 +87,21 @@ Rule: this file is append-only. Never add secrets (use placeholders like `<WIFI_
   - Pushes to `main` now require PR flow; direct pushes are blocked by design.
 - Prevention notes for next session:
   - Open feature branches + PRs for future changes, or adjust protection policy if solo workflow becomes too strict.
+
+### 2026-02-27 (CET)
+- Goal: rename GitHub repository from `Synthalia` to `synthalia` for lowercase URL uniformity.
+- Initial context: repo was published as `enuzzo/Synthalia`; user prefers all-lowercase repo names in GitHub URLs while keeping branding (first-letter uppercase) in README title and descriptions.
+- Changes made:
+  - `SESSION_LOG.md` — updated repo URL reference from `Synthalia` to `synthalia`
+- Errors encountered:
+  - Symptom: n/a (rename done via GitHub Settings UI by user).
+- Checks performed:
+  - Verified no other files contain hard-coded references to the old uppercase repo URL.
+- Residual risks / follow-up:
+  - GitHub automatically redirects `enuzzo/Synthalia` → `enuzzo/synthalia` for all existing links.
+  - All local clones: run `git remote set-url origin https://github.com/enuzzo/synthalia.git` to update the remote URL (optional, redirect handles it, but clean is better).
+- Prevention notes for next session:
+  - New repos: create directly with lowercase name.
 
 ### 2026-02-27 00:30 (CET)
 - Goal: add three new interactive effects and extend the EFFECTS mode selector.
