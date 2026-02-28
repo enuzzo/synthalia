@@ -4,6 +4,7 @@ config.h
 config.local.h
 .env
 .env.*
+/.claude/settings.local.json
 
 # ESPHome artifacts
 .esphome/
